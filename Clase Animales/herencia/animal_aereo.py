@@ -45,3 +45,4 @@ class AnimalAereo(Animal):
         Muestra el tipo de sonido que típicamente haría un animal aéreo.
         """
         print(f"{self.obtener_nombre()} hace un sonido aéreo (canta, habla, etc).")
+

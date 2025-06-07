@@ -46,3 +46,4 @@ class AnimalTerrestre(Animal):
         Especifica el tipo de sonidos que haría un animal terrestre.
         """
         print(f"{self.obtener_nombre()} hace un sonido terrestre (ladra, ruge, etc).")
+

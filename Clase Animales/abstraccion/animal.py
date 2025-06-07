@@ -51,3 +51,4 @@ class Animal:
         Este comportamiento es genérico y será sobreescrito por las subclases.
         """
         print("El animal hace un sonido.")
+
