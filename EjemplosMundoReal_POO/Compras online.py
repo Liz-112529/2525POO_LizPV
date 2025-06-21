@@ -66,7 +66,7 @@ if __name__ == "__main__":
     auriculares = ProductoTecnologia("Auriculares Bluetooth", 38.50, "Xiaomi")
 
     # Crear usuario
-    usuario1 = Usuario("liz2025")
+    usuario1 = Usuario("liz 2025")
 
     # Agregar productos al carrito
     usuario1.agregar_producto(laptop)
