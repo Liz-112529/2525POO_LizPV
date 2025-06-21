@@ -78,3 +78,4 @@ if __name__ == "__main__":
 
     # Calcular total
     usuario1.total_compra()
+
