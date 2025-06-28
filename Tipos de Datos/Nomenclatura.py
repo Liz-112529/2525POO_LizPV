@@ -1,60 +1,46 @@
-# Programa para calcular el área de un triángulo dados su base y altura.
-# El usuario ingresa los datos, el programa valida que sean números positivos
-# y devuelve el área calculada. Se usan diferentes tipos de datos (int, float,
-# str, bool) y se siguen las buenas prácticas de estilo y documentación.
+# Programa para gestionar información básica de estudiantes
+# Permite registrar nombre, edad, promedio y verificar si aprueban
+# Uso de clases, subclases, tipos de datos, identificadores y convenciones
 
-def es_numero_positivo(valor):
-    """
-    Función que verifica si el valor ingresado puede convertirse en un número float positivo.
-    Retorna True si es válido, de lo contrario False.
-    """
-    try:
-        numero = float(valor)
-        return numero > 0
-    except ValueError:
-        return False
+class Persona:
+    def __init__(self, nombre: str, edad: int):
+        self.nombre = nombre
+        self.edad = edad
+
+    def mostrar_info(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Edad: {self.edad}")
 
 
-def calcular_area_triangulo(base, altura):
-    """
-    Calcula el área de un triángulo usando la fórmula: (base * altura) / 2
-    Parámetros:
-        base (float): La base del triángulo.
-        altura (float): La altura del triángulo.
-    Retorna:
-        float: El área del triángulo.
-    """
-    return (base * altura) / 2
+class Estudiante(Persona):
+    def __init__(self, nombre: str, edad: int, promedio: float):
+        super().__init__(nombre, edad)
+        self.promedio = promedio
+        self.aprobado = self.verificar_aprobacion()
+
+    def verificar_aprobacion(self) -> bool:
+        """Devuelve True si el promedio es mayor o igual a 7.0"""
+        return self.promedio >= 7.0
+
+    def mostrar_info(self):
+        """Muestra toda la información del estudiante"""
+        super().mostrar_info()
+        print(f"Promedio: {self.promedio}")
+        print(f"Aprobado: {self.aprobado}")
 
 
-# Inicio del programa
-print("CÁLCULO DEL ÁREA DE UN TRIÁNGULO")
-print("---------------------------------")
+# --- Prueba del programa ---
+def main():
+    # Registro de un estudiante
+    nombre_estudiante = "Liz Peña"
+    edad_estudiante = 34
+    promedio_estudiante = 9.5
 
-# Pedir al usuario la base y la altura del triángulo
-base_valida = False
-altura_valida = False
+    estudiante1 = Estudiante(nombre_estudiante, edad_estudiante, promedio_estudiante)
 
-# Obtener una base válida
-while not base_valida:
-    entrada_base = input("Ingrese la base del triángulo (en cm): ")
-    base_valida = es_numero_positivo(entrada_base)
-    if not base_valida:
-        print("  Error: Ingrese un número positivo válido para la base.")
+    print("📘 Información del estudiante:")
+    estudiante1.mostrar_info()
 
-# Obtener una altura válida
-while not altura_valida:
-    entrada_altura = input("Ingrese la altura del triángulo (en cm): ")
-    altura_valida = es_numero_positivo(entrada_altura)
-    if not altura_valida:
-        print("  Error: Ingrese un número positivo válido para la altura.")
 
-# Convertir entradas a tipo float
-base = float(entrada_base)
-altura = float(entrada_altura)
-
-# Calcular el área de un triángulo
-area = calcular_area_triangulo(base, altura)
-
-# Mostrar el resultado
-print(f"\n✅ El área del triángulo con base {base} cm y altura {altura} cm es: {area:.2f} cm²")
+if __name__ == "__main__":
+    main()
