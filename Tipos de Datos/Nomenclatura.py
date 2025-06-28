@@ -38,7 +38,7 @@ def main():
 
     estudiante1 = Estudiante(nombre_estudiante, edad_estudiante, promedio_estudiante)
 
-    print("📘 Información del estudiante:")
+    print(" Información del estudiante:")
     estudiante1.mostrar_info()
 
 if __name__ == "__main__":
