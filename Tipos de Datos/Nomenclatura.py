@@ -41,6 +41,5 @@ def main():
     print("📘 Información del estudiante:")
     estudiante1.mostrar_info()
 
-
 if __name__ == "__main__":
     main()
