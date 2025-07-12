@@ -37,3 +37,4 @@ simulacion_base_datos()
 
 # Mensaje final de cierre (los destructores ya se han ejecutado al salir de la función)
 print("=== FIN DE LA SIMULACIÓN ===")
+
