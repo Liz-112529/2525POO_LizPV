@@ -1,0 +1,32 @@
+{
+    "P-001": {
+        "id": "P-001",
+        "nombre": "REFRIGERADORA",
+        "cantidad": 8,
+        "precio": 560.99
+    },
+    "P-002": {
+        "id": "P-002",
+        "nombre": "COCINA",
+        "cantidad": 18,
+        "precio": 329.99
+    },
+    "P-003": {
+        "id": "P-003",
+        "nombre": "LAVADORA",
+        "cantidad": 14,
+        "precio": 250.0
+    },
+    "P-004": {
+        "id": "P-004",
+        "nombre": "AIRE ACONDICIONADO 24000 BTU LG",
+        "cantidad": 7,
+        "precio": 690.0
+    },
+    "P-005": {
+        "id": "P-005",
+        "nombre": "LCD 65\" SAMSUNG",
+        "cantidad": 11,
+        "precio": 1500.0
+    }
+}
