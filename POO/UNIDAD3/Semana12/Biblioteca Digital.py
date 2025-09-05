@@ -40,7 +40,7 @@ class Biblioteca:
             self.libros[libro.isbn] = libro
             print(f"{libro.info[0]:<30} {libro.info[1]:<20} {libro.categoria:<15} {libro.isbn:<10}")
         else:
-            print(f"⚠️ El libro con ISBN {libro.isbn} ya está en la biblioteca.")
+            print(f" El libro con ISBN {libro.isbn} ya está en la biblioteca.")
 
     def quitar_libro(self, isbn):
         if isbn in self.libros:
