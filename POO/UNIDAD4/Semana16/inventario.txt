@@ -1,0 +1,86 @@
+[
+  {
+    "codigo": "P001",
+    "nombre": "Lavadora",
+    "cantidad": 12,
+    "precio": 245.0
+  },
+  {
+    "codigo": "P002",
+    "nombre": "Refrigeradora",
+    "cantidad": 10,
+    "precio": 639.0
+  },
+  {
+    "codigo": "P003",
+    "nombre": "Cocina",
+    "cantidad": 22,
+    "precio": 370.0
+  },
+  {
+    "codigo": "P004",
+    "nombre": "Televisor",
+    "cantidad": 15,
+    "precio": 258.0
+  },
+  {
+    "codigo": "P005",
+    "nombre": "Parlante",
+    "cantidad": 8,
+    "precio": 220.0
+  },
+  {
+    "codigo": "P006",
+    "nombre": "Ventiladores",
+    "cantidad": 16,
+    "precio": 75.0
+  },
+  {
+    "codigo": "P007",
+    "nombre": "Proyector",
+    "cantidad": 5,
+    "precio": 57.0
+  },
+  {
+    "codigo": "P008",
+    "nombre": "Computadoras",
+    "cantidad": 11,
+    "precio": 588.0
+  },
+  {
+    "codigo": "P009",
+    "nombre": "Laptops",
+    "cantidad": 8,
+    "precio": 644.0
+  },
+  {
+    "codigo": "P010",
+    "nombre": "Microondas",
+    "cantidad": 18,
+    "precio": 89.0
+  },
+  {
+    "codigo": "P011",
+    "nombre": "Secadoras",
+    "cantidad": 6,
+    "precio": 475.0
+  },
+  {
+    "codigo": "P012",
+    "nombre": "Estractor de aire",
+    "cantidad": 12,
+    "precio": 65.0
+  },
+  {
+    "codigo": "P013",
+    "nombre": "Impresoras",
+    "cantidad": 34,
+    "precio": 280.0
+  },
+  {
+    "codigo": "P014",
+    "nombre": "Aire Acondicionado",
+    "cantidad": 4,
+    "precio": 550.0
+  }
+]
